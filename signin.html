@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar usuario</title>
+</head>
+
+<body>
+  <h1>Registrar usuario</h1>
+  <form method="post" action="#">
+    <label for="nombre">Nombre</label>
+    <input id="nombre" type="text">
+    <br>
+    <label for="apellido">Apellido</label>
+    <input id="apellido" type="text">
+    <br>
+    <label>Tipo de documento</label>
+    <select name="tipo_doc" id="tipo_doc">
+      <option value="seleccionar">Seleccionar...</option>
+      <option value="dni">DNI</option>
+      <option value="rut">RUT</option>
+      <option value="cedula">Cédula</option>
+      <option value="pasaporte">Pasaporte</option>
+    </select>
+    <input id="numero_doc" type="number">
+    <br>
+    <label for="fecha">Fecha de nacimiento</label>
+    <input id="fecha" type="date">
+    <br>
+    <label>Sexo</label>
+    <input name="sexo" type="radio" value="hombre">Masculino
+    <input name="sexo" type="radio" value="mujer">Femenino
+    <br>
+    <label for="email">Correo electrónico</label>
+    <input id="email" type="text">
+    <br>
+    <label for="movil">Celular</label>
+    <input id="movil" type="number">
+    <br>
+    <label for="comentarios">Comentarios</label><br>
+    <textarea name="comentarios" rows="10" cols="50">Puede dejar comentarios</textarea>
+    <br>
+    <label for="password">Contraseña</label>
+    <input id="password" type="password">
+    <br>
+    <label for="re_password">Repetir contraseña</label>
+    <input id="re_password" type="password">
+    <br>
+    <button type="submit">Registrarse</button>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+#promociones ul {
+    font-family: 'Courier New', Courier, monospace;
+}
+#promociones li h3 {
+    color: red;
+}
+#promociones li p {
+    color: green;
+}

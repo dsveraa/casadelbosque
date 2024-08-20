@@ -1,236 +1,234 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
     <meta charset="UTF-8" />
     <title>Casa del Bosque - Comida chilena</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" media="screen" />
-    <link rel="stylesheet" href="grid.css" media="screen" />
   </head>
 
   <body>
-    <div class="nav-container">
-      <header class="menu">
-        <div id="logo">Casa del Bosque</div>
-        <div id="slogan">Comida chilena</div>
-        <nav id="navSite">
-          <ul>
-            <li><a href="#menu">Menú</a></li>
-            <li><a href="#especialidades">Especialidades</a></li>
-            <li><a href="#promociones">Promociones</a></li>
-            <li><a href="#platosemana">Plato de la semana</a></li>
-            <li><a href="#quienessomos">Quiénes somos</a></li>
-          </ul>
-        </nav>
-        <nav id="navLog">
-          <ul>
-            <a href="login.html"><li>Iniciar sesión</li></a>
-            <a href="signup.html"><li>Registro</li></a>
-          </ul>
-        </nav>
-      </header>
-    </div>
+    <div id="main-container">
+      <div class="container">
+        <header class="flex-header">
+          <div id="logo">
+            <div>Casa del Bosque</div>
+            <div id="slogan">Comida chilena</div>
+          </div>
+          <nav id="navSite">
+            <ul class="flex-menu">
+              <li><a href="#menu">Menú</a></li>
+              <li><a href="#especialidades">Especialidades</a></li>
+              <li><a href="#promociones">Promociones</a></li>
+              <li><a href="#platosemana">Plato de la semana</a></li>
+              <li><a href="#quienes">Quiénes somos</a></li>
+              <li><a href="#inicio_sesion">Iniciar sesión</a></li>
+            </ul>
+          </nav>
+        </header>
+        <article id="menu">
+          <h2>Menú</h2>
 
-    <div class="main-container">
-      <div class="top-container">
-        <div class="grid-item item1">
-          <article id="quienes">
-            <section>
-              <h2>Quienes somos</h2>
-              <h3>Denominación legal</h3>
-              <p>Casa del Bosque</p>
-              <p>Sociedad Vera Saldaña Chile</p>
-              <h3>Descripción</h3>
-              <p>
-                Casa del bosque es un restaurante de
-                <em><strong>comida tradicional chilena</strong></em
-                >, donde podrá probar diferentes y deliciosos platos típicos del
-                territorio nacional.
-              </p>
+          <!-- SECCIÓN DE PLATOS -->
+          <div class="flex-content">
+            <section id="platos">
+              <h4>Platos</h4>
+              <div class="table-container">
+                <table>
+                  <tr>
+                    <td>Porotos con riendas:</td>
+                    <td class="right">
+                      <p>$3900</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lentejas con longaniza:</td>
+                    <td>
+                      <p>$4100</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Cazuela de ave:</td>
+                    <td>
+                      <p>$4300</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </section>
-            <br />
-            <address>
-              <h3>Dirección del local</h3>
-              <p>Av. Melipeuco #2160</p>
-              <p>La Serena</p>
-            </address>
-          </article>
-        </div>
-        <div class="grid-item item1"><h2 class="titulo">Menú</h2></div>
-        <div class="grid-item">
-          <section id="platos">
-            <h4>Platos</h4>
-            <div class="table-container">
-              <table>
-                <tr>
-                  <td>Porotos con riendas:</td>
-                  <td class="right">
-                    <p>$3900</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Lentejas con longaniza:</td>
-                  <td>
-                    <p>$4100</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Cazuela de ave:</td>
-                  <td>
-                    <p>$4300</p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </section>
-        </div>
-        <div class="grid-item">
-          <section id="bebidas">
-            <h4>Bebidas</h4>
-            <div class="table-container">
-              <table>
-                <tr>
-                  <td>Bebida 350cc:</td>
-                  <td class="right">
-                    <p>$900</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bebida 500cc:</td>
-                  <td>
-                    <p>$1200</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bebida 1000cc:</td>
-                  <td>
-                    <p>$2200</p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </section>
-        </div>
-        <div class="grid-item">
-          <section id="postres">
-            <h4>Postres</h4>
-            <div class="table-container">
-              <table>
-                <tr>
-                  <td>Leche nevada:</td>
-                  <td class="right">
-                    <p>$1600</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Calzones rotos</td>
-                  <td>
-                    <p>$1800</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Torta curicana:</td>
-                  <td>
-                    <p>$2000</p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </section>
-        </div>
-      </div>
 
-      <div class="bottom-container">
-        <div class="grid-item">
+            <!-- SECCIÓN DE BEBIDAS -->
+            <section id="bebidas">
+              <h4>Bebidas</h4>
+              <div class="table-container">
+                <table>
+                  <tr>
+                    <td>Bebida 350cc:</td>
+                    <td class="right">
+                      <p>$900</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Bebida 500cc:</td>
+                    <td>
+                      <p>$1200</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Bebida 1000cc:</td>
+                    <td>
+                      <p>$2200</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+
+            <!-- SECCIÓN DE POSTRES -->
+            <section id="postres">
+              <h4>Postres</h4>
+              <div class="table-container">
+                <table>
+                  <tr>
+                    <td>Leche nevada:</td>
+                    <td class="right">
+                      <p>$1600</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Calzones rotos</td>
+                    <td>
+                      <p>$1800</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Torta curicana:</td>
+                    <td>
+                      <p>$2000</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </div>
+
+          <!-- SECCIÓN DE ESPECIALIDADES -->
           <section id="especialidades">
-            <h2 class="titulo">Especialidades de la casa</h2>
+            <h2>Especialidades de la casa</h2>
 
             <dl>
-              <div class="card">
-                <dt>Pastel de choclo</dt>
-                <br />
-                <dd>
-                  El pastel de choclo es un plato sudamericano preparado con una
-                  pasta horneada de granos tiernos de choclo y, dependiendo del
-                  lugar donde se prepare, es dulce o salado, con relleno o sin
-                  relleno.
-                </dd>
-                <br />
-                <dd><span>$5500</span></dd>
-              </div>
+              <div class="flex-content">
+                <div class="card">
+                  <dt>Pastel de choclo</dt>
+                  <br />
+                  <dd>
+                    El pastel de choclo es un plato sudamericano preparado con una pasta horneada de granos tiernos de
+                    choclo y, dependiendo del lugar donde se prepare, es dulce o salado, con relleno de carne o verduras,
+                    y se sirve frecuentemente con ensaladas.
+                  </dd>
+                  <br />
+                  <dd><span>$5500</span></dd>
+                </div>
 
-              <div class="card">
-                <dt>Pastel de jaiba</dt>
-                <br />
-                <dd>
-                  El pastel de jaiba chileno es un plato tradicional de la
-                  cocina chilena, especialmente popular en las zonas costeras.
-                  Está hecho principalmente de carne de jaiba y suele tener una
-                  consistencia cremosa.
-                </dd>
-                <br />
-                <dd><span>$5700</span></dd>
-              </div>
+                <div class="card">
+                  <dt>Pastel de jaiba</dt>
+                  <br />
+                  <dd>
+                    El pastel de jaiba chileno es un plato tradicional de la cocina chilena, especialmente popular en las
+                    zonas costeras. Está hecho principalmente de carne de jaiba, cebolla, especias, pan rallado y suele
+                    tener una deliciosa y suave consistencia cremosa.
+                  </dd>
+                  <br />
+                  <dd><span>$5700</span></dd>
+                </div>
 
-              <div class="card">
-                <dt>Caldillo de congrio</dt>
-                <br />
-                <dd>
-                  Es un caldo elaborado principalmente con congrio, vegetales y
-                  condimentos, ideal para los días fríos o para disfrutar como
-                  un plato principal sustancioso. El poeta chileno Pablo Neruda
-                  incluso le dedicó una oda en su libro "Odas elementales".
-                </dd>
-                <br />
-                <dd><span>$5900</span></dd>
+                <div class="card">
+                  <dt>Caldillo de congrio</dt>
+                  <br />
+                  <dd>
+                    Este famoso plato nacional es un caldo elaborado principalmente con congrio, vegetales y condimentos.
+                    Ideal para los días fríos, este plato sustancioso es famoso en Chile y, según el reconocido poeta
+                    Pablo Neruda, captura la esencia del mar en cada cucharada.
+                  </dd>
+                  <br />
+                  <dd><span>$5900</span></dd>
+                </div>
               </div>
             </dl>
           </section>
-        </div>
-        <div class="grid-item">
+
+          <!-- SECCIÓN DE PROMOCIONES-->
           <section id="promociones">
-            <h2 class="titulo">Promociones especiales</h2>
+            <h2>Promociones especiales</h2>
             <ul>
-              <li>
-                <h3>Promoción 1</h3>
-                <h4>
-                  Lleve 2 especialidades + 2 bebidas de 350cc:
-                  <span>$11900</span>
-                </h4>
-              </li>
-              <li>
-                <h3>Promoción 2</h3>
-                <h4>
-                  Lleve 3 platos + 1 bebida de 1000cc: <span>$12900</span>
-                </h4>
-              </li>
+              <div class="flex-content">
+                <li>
+                  <h3>Promoción 1</h3>
+                  <h4>
+                    2 especialidades + 2 bebidas de 350cc:
+                    <span>$11900</span>
+                  </h4>
+                </li>
+                <li>
+                  <h3>Promoción 2</h3>
+                  <h4>3 platos + 1 bebida de 1000cc: <span>$12900</span></h4>
+                </li>
+              </div>
             </ul>
           </section>
-        </div>
-        <div class="grid-item">
+
+          <!-- SECCIÓN DE PLATO DE LA SEMANA -->
           <section id="platosemana">
-            <h2 class="titulo">Plato de la semana</h2>
+            <h2>Plato de la semana</h2>
             <br />
             <h3>Empanadas de pino</h3>
             <div>
               Las empanadas de pino chilenas son un plato tradicional de Chile.
-              Consisten en una masa de harina de trigo que se rellena con una
-              mezcla conocida como "pino", hecha de carne de res molida o
-              picada, cebolla, ají de color (paprika), comino y otros
-              condimentos. Además, se les agrega un cuarto de huevo duro, una
-              aceituna negra y, opcionalmente, pasas. La masa se cierra en forma
-              de media luna y se hornea hasta que esté dorada y crujiente.
+              Consisten en una masa de harina de trigo que se rellena con una mezcla
+              conocida como "pino", hecha de carne de res molida o picada, cebolla,
+              ají de color (paprika), comino y otros condimentos. Además, se les
+              agrega un cuarto de huevo duro, una aceituna negra y, opcionalmente,
+              pasas. La masa se cierra en forma de media luna y se hornea hasta que
+              esté dorada y crujiente.
             </div>
-            <img
-              src="https://cocinachilena.cl/wp-content/uploads/2008/09/empanadas-pino-carne-2-scaled-768x489.jpg"
-              alt="empanadas chilenas"
-              
-            />
+            <br>
+            <h4>Galería de imágenes</h>
+              <div class="flex-content">
+                <div class="image-container">
+                  <img src="https://cocinachilena.cl/wp-content/uploads/2008/09/empanadas-pino-carne-2-scaled-768x489.jpg"
+                    alt="empanadas chilenas" height="350" />
+                </div>
+                <div class="image-container">
+                  <img src="https://cocinachilena.cl/wp-content/uploads/2022/08/horno-barro-empanada-728x728.jpg"
+                    alt="empanadas en horno de barro" height="350" />
+                </div>
+                <div class="image-container">
+                  <img
+                    src="https://assets.tmecosys.com/image/upload/t_web667x528/img/recipe/ras/Assets/91da0606-7d20-4ba6-9ffd-aabaa7be069e/Derivates/6ec9f22d-75f8-4524-a837-0859d7901390.jpg"
+                    alt="empanadas en horno de barro" height="350" />
+                </div>
+
+              </div>
+              <div class="flex-content">
+                <div class="audio">
+                  Receta de la empanada en 1 minuto
+                  <audio controls>
+                    <source src="/empanadas.mp3" type="audio/mpeg" />
+                  </audio>
+                </div>
+
+                <div id="link">
+                  <a href="https://fabricaempandaspormayor.cl/1531-2/" target="_blank">
+                    ¿Por qué se le llama pino al relleno de la empanada?
+                  </a>
+                </div>
+              </div>
           </section>
-        </div>
-        <div class="grid-item">
+          <!-- SECCIÓN DE VIDEOS RELACIONADOS -->
           <section id="relatedVid">
-            <h2 class="titulo">Videos relacionados</h2>
+            <h2>Videos relacionados</h2>
+            <br>
             <iframe
               width="100%"
               height="535px"
@@ -242,10 +240,8 @@
               allowfullscreen
             ></iframe>
           </section>
-        </div>
-        <div class="grid-item">
           <div class="form-container">
-            <h1>Iniciar sesión</h1>
+            <h1 id="inicio_sesion">Iniciar sesión</h1>
             <form method="post" action="#">
               <label for="email">Usuario</label>
               <input id="email" type="text" placeholder="Ingresa tu usuario" />
@@ -258,7 +254,33 @@
               <button type="submit">Iniciar sesión</button>
             </form>
           </div>
-        </div>
+        </article>
+        <article id="quienes">
+          <section>
+            <h2>Quienes somos</h2>
+            <footer>
+              <div class="box">
+                <h3>Denominación legal</h3>
+                <p>Casa del Bosque</p>
+                <p>Sociedad Vera Saldaña Chile</p>
+              </div>
+              <div class="box">
+                <h3>Descripción</h3>
+                <p>
+                  Casa del bosque es un restaurante de
+                  <em><strong>comida tradicional chilena</strong></em
+                  >, donde podrá probar diferentes y deliciosos platos típicos del
+                  territorio nacional.
+                </p>
+              </div>
+              <address class="box">
+                <h3>Dirección del local</h3>
+                <p>Av. Melipeuco #2160</p>
+                <p>La Serena</p>
+              </address>
+            </footer>
+          </section>
+        </article>
       </div>
     </div>
   </body>
